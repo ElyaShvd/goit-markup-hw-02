@@ -32,10 +32,17 @@ ul {
   list-style: none;
 }
 
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+/* Logo */
+
 .logo.primary {
   color: var(--black-color);
-  font-family: Raleway, "Times New Roman", Times, serif;
 
+  font-family: Raleway, "Times New Roman", Times, serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -43,8 +50,8 @@ ul {
 
 .logo.secondary {
   color: var(--white-color);
-  font-family: Raleway, "Times New Roman", Times, serif;
 
+  font-family: Raleway, "Times New Roman", Times, serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -66,11 +73,39 @@ ul {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
+
   outline: 2px solid tomato;
 }
 
+/* Main-nav  */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Site-nav */
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item {
+  /* background-color: tomato; */
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -85,13 +120,24 @@ ul {
   color: var(--accent-color);
 }
 
-.list {
-  padding: 0;
-  margin: 0;
+/* Info-nav */
+
+.info-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.info-nav .item {
+  margin-right: 30px;
+}
+
+.info-nav .item:last-child {
+  margin-right: 0;
 }
 
 .info-nav .link {
   display: inline-block;
+
   color: var(--text-color);
 
   font-weight: 500;
@@ -115,6 +161,7 @@ ul {
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+
   color: var(--white-color);
 
   font-weight: 900;
@@ -136,13 +183,14 @@ ul {
   padding-bottom: 0;
 }
 
-.section.client {
+.section:last-child {
   padding-bottom: 94px;
 }
 
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
+
   color: var(--primary-text-color);
 
   font-weight: 700;
@@ -153,9 +201,14 @@ ul {
 
 /* Features */
 
+.feature-list {
+  display: flex;
+}
+
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
+
   color: var(--primary-text-color);
 
   font-weight: 700;
@@ -167,6 +220,7 @@ ul {
 .feature-list .text {
   margin-top: 0;
   margin-bottom: 0;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -174,7 +228,15 @@ ul {
 
 /* Works */
 
+.work-list {
+  display: flex;
+}
+
 /* Teams */
+
+.team-list {
+  display: flex;
+}
 
 .team {
   background-color: #f5f4fa;
@@ -183,6 +245,7 @@ ul {
 .team-list .title {
   margin-top: 0;
   margin-bottom: 10px;
+
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -193,26 +256,33 @@ ul {
 .team-list .text {
   margin-top: 0;
   margin-bottom: 16px;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 1.18;
 }
 
+/* Client-list */
+
+.client-list {
+  display: flex;
+}
+
 /* Button */
 
 .button {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+
   color: var(--white-color);
+  background-color: var(--accent-color);
 
   font-size: 16px;
   font-weight: 700;
   line-height: 1.8;
   letter-spacing: 0.06em;
   text-align: center;
-
-  background-color: var(--accent-color);
-  padding: 10px 32px;
-  border-radius: 4px;
-  border: none;
 }
 
 /* footer */
@@ -248,4 +318,56 @@ ul {
 .footer-nav .link:hover,
 .footer-nav .link:focus {
   color: var(--accent-color);
+}
+
+/* Portfolio */
+
+.test-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /* outline: 1px solid blue; */
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: 0;
+  padding-left: 0;
+  /* background-color: tomato; */
+}
+
+.flex-element {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+
+.flex-element:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.flex-element .title {
+  color: var(--primary-text-color);
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.flex-element .text {
+  color: var(--text-color);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
 }
