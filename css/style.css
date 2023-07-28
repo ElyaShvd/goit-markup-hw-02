@@ -67,6 +67,8 @@ ul {
 /* Page header */
 
 .page-header {
+  height: 80px;
+
   color: var(--white-color);
 }
 
@@ -104,8 +106,8 @@ ul {
 
 .site-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 
   color: var(--primary-text-color);
 
@@ -117,6 +119,7 @@ ul {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  transition: 0.5s;
 }
 
 .site-nav .link.current {
@@ -156,6 +159,7 @@ ul {
 .info-nav .link:hover,
 .info-nav .link:focus {
   color: var(--accent-color);
+  transition: 0.5s;
 }
 
 .network-icon-envelope {
@@ -170,6 +174,7 @@ ul {
 
 .link:hover .network-icon-envelope {
   fill: var(--accent-color);
+  transition: 0.5s;
 }
 
 /* Hero */
@@ -193,6 +198,11 @@ ul {
 }
 
 .overlay {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
@@ -372,6 +382,7 @@ ul {
 
 .network:hover {
   background-color: var(--accent-color);
+  transition: 0.5s;
 }
 
 .network-icon {
@@ -384,10 +395,12 @@ ul {
 
 .network-icon:hover {
   fill: var(--white-color);
+  transition: 0.5s;
 }
 
 .network:hover .network-icon {
   fill: var(--white-color);
+  transition: 0.5s;
 }
 
 .network-list {
@@ -428,6 +441,7 @@ ul {
 .client-icon:hover {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
+  transition: 0.5s;
 }
 
 /* Button */
@@ -447,6 +461,10 @@ ul {
   text-align: center;
 
   cursor: pointer;
+}
+.button:hover {
+  background-color: #188ce8;
+  transition: 0.5s;
 }
 
 .button-secondary {
@@ -471,6 +489,7 @@ ul {
 .button-secondary:hover {
   color: var(--white-color);
   background-color: var(--accent-color);
+  transition: 0.5s;
 }
 
 .button-secondary:focus {
@@ -540,10 +559,12 @@ ul {
   padding: 12px;
   border-radius: 50%;
   background-color: var(--accent-color);
+  transition: 0.5s;
 }
 
 .links:hover {
   background-color: #2196f3;
+  transition: 0.5s;
 }
 
 .footer .text {
@@ -580,6 +601,7 @@ ul {
 .footer-nav .link:hover,
 .footer-nav .link:focus {
   color: var(--accent-color);
+  transition: 0.5s;
 }
 
 .information {
@@ -604,6 +626,11 @@ ul {
   align-items: center;
 
   cursor: pointer;
+}
+
+.button-footer:hover {
+  background-color: #188ce8;
+  transition: 0.5s;
 }
 
 .button-footer::after {
@@ -684,4 +711,9 @@ ul {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8;
+}
+
+.button-secondary.active {
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
