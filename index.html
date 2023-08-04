@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page">
+
+    <!-- Page Header -->
     <header class="page-header">
       <nav class="container main-nav">
         <a href="/index.html" class="logo primary"
@@ -321,7 +323,6 @@
     </main>
 
     <!-- Footer -->
-
     <footer class="footer">
       <div class="container footer">
         <div class="information">
@@ -372,23 +373,106 @@
             </li>
           </ul>
         </div>
-        <div class="form">
-          <h2 class="footer-title">Подпишитесь на рассылку</h2>
-          <button type="button" class="button-footer">Подписаться</button>
-        </div>
+        
+        <form>
+          <div class="footer-form">
+           <h2 class="footer-title">Подпишитесь на рассылку</h2>
+          <label for="mail" class="footer-label">
+          </label>
+          <input class="footer-input" type="email" name="mail" id="mail" placeholder="E-mail">
+          <button type="button" class="button-footer">Подписаться</button>  
+          </div>
+          
+        </form>
       </div>
     </footer>
 
+        <!-- Modal -->
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        
         <button class="close-modal" data-modal-close>
           <svg class="close-icon">
-            <use href="./images/svg/close-black.svg#close-black-18dp (2) 1"></use>
+            <use href="./images/svg/sprite.svg#icon-close-black"></use>
           </svg>
         </button>
+        <form class="form js-speaker-form">
+          <div class="wrapper-form">
+          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+          <!-- name input -->
+          <div class="form-field">
+            <label for="name" class="form-label">Имя</label>
+            <div class="input-icon">
+              <input type="text" class="form-input" name="name" id="name" placeholder="">
+              
+              <svg class="form-icon">
+                <use href="./images/svg/sprite.svg#icon-person-black"></use>
+              </svg>
+              
+            </div>
+          </div> 
+          <!-- tel input -->
+          <div class="form-field">
+            <label for="tel" class="form-label">Телефон</label>
+            <div class="input-icon">
+              <input type="tel"class="form-input" name="tel" id="tel" placeholder="">
+              <svg class="form-icon">
+                <use href="./images/svg/sprite.svg#icon-phone-black"></use>
+              </svg>          
+            </div> 
+
+            <!-- email input -->
+          <div class="form-field">
+            <label for="mail" class="form-label">Почта</label>
+            <div class="input-icon">
+              <input type="email" class="form-input" name="mail" id="mail" placeholder="">
+              <svg class="form-icon">
+                <use href="./images/svg/sprite.svg#icon-email-black"></use>
+              </svg>            
+            </div>
+          </div> 
+
+          <!-- textarea input -->
+          <div class="form-field">
+          <label for="comment" class="form-label">Коментарий</label>
+          <textarea class="form-textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+        </div>
+        </div>
+
+            <!-- checkbox input -->
+            <div class="input-wrapper user-aggrement">
+              <label class="input-label checkbox" for="user-aggrement">
+                <span>Соглашаюсь с рассылкой и принимаю</span>
+                <a href="#" class="label-link">Условия договора</a>
+                <input class="user-aggrement checkbox" type="checkbox" name="user-aggrement" id="user-aggrement" />
+                <span class="input-icon checkbox-icon">
+                  <svg class="icon-svg-checkbox">
+                    <use href="./images/svg/sprite.svg#icon-icon-check"></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div class="form-button">
+          <button type="submit" class="button form-btn">Отправить</button>
+            </div>
+        </div>
+        
+        </form>
       </div>
     </div>
+
+<script>
+  (() => {
+  document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+    e.preventDefault();
+
+    new FormData(e.currentTarget).forEach((value, name) =>
+      console.log(`${name}: ${value}`),
+    );
+  });
+})();
+</script>
+
     <script>
       (() => {
       const refs = {
@@ -403,6 +487,9 @@
 
   function toggleModal() {
     refs.backdrop.classList.toggle('is-hidden');
+  }
+  function logBackdropClick() {
+
   }
 })();
     </script>

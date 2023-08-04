@@ -247,7 +247,6 @@
     </section>
 
     <!-- Footer -->
-
     <footer class="footer">
       <div class="container footer">
         <div class="information">
@@ -298,10 +297,21 @@
             </li>
           </ul>
         </div>
-        <div class="form">
-          <h2 class="footer-title">Подпишитесь на рассылку</h2>
-          <button type="button" class="button-footer">Подписаться</button>
-        </div>
+
+        <form>
+          <div class="footer-form">
+            <h2 class="footer-title">Подпишитесь на рассылку</h2>
+            <label for="mail" class="footer-label"> </label>
+            <input
+              class="footer-input"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="E-mail"
+            />
+            <button type="button" class="button-footer">Подписаться</button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>
