@@ -17,27 +17,36 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page">
+    <!-- Page Header -->
     <header class="page-header">
-      <nav class="container main-nav">
-        <a href="/index.html" class="logo primary"
-          ><span class="logo-accent">Web</span>Studio</a
+      <nav class="page-header__nav container">
+        <a href="/index.html" class="logo-primary"
+          ><span class="logo-primary__accent">Web</span>Studio</a
         >
         <ul class="site-nav list">
-          <li class="item"><a href="./index.html" class="link">Студия</a></li>
-          <li class="item"><a href="" class="link current">Портфолио</a></li>
-          <li class="item"><a href="" class="link">Контакты</a></li>
+          <li class="site-nav__item">
+            <a href="./index.html" class="site-nav__link">Студия</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="./portfolio.html" class="site-nav__link current"
+              >Портфолио</a
+            >
+          </li>
+          <li class="site-nav__item">
+            <a href="" class="site-nav__link">Контакты</a>
+          </li>
         </ul>
         <ul class="info-nav list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
+          <li class="info-nav__item">
+            <a href="mailto:info@devstudio.com" class="info-nav__link">
               <svg class="network-icon-envelope" with="16px" height="12px">
                 <use href="./images/svg/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a href="tel:+38096 111 11 11" class="link">
+          <li class="info-nav__item">
+            <a href="tel:+38096 111 11 11" class="info-nav__link">
               <svg class="network-icon-envelope" with="10px" height="16px">
                 <use href="./images/svg/sprite.svg#icon-smartphone"></use>
               </svg>
@@ -49,32 +58,32 @@
     </header>
 
     <section class="section">
-      <div class="test-container">
+      <div class="portfolio-container">
         <!-- <h1 class="section-title">Portfolio</h1> -->
 
         <ul class="portfolio-nav">
-          <li class="portfolio-nav-item">
+          <li class="portfolio-nav__item">
             <button type="button" class="button-secondary">Все</button>
           </li>
-          <li class="portfolio-nav-item">
+          <li class="portfolio-nav__item">
             <button type="button" class="button-secondary">Веб-сайты</button>
           </li>
-          <li class="portfolio-nav-item">
+          <li class="portfolio-nav__item">
             <button type="button" class="button-secondary">Приложения</button>
           </li>
-          <li class="portfolio-nav-item">
+          <li class="portfolio-nav__item">
             <button type="button" class="button-secondary">Дизайн</button>
           </li>
-          <li class="portfolio-nav-item">
+          <li class="portfolio-nav__item">
             <button type="button" class="button-secondary">Маркетинг</button>
           </li>
         </ul>
 
-        <ul class="flex-container">
-          <li class="flex-element">
-            <div class="card-thumb">
+        <ul class="card-set">
+          <li class="card-set__item">
+            <div class="card">
               <img src="/images/img1.jpg" alt="" width="370" height="294" />
-              <div class="card-text">
+              <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -82,13 +91,15 @@
                 </p>
               </div>
             </div>
-            <h2 class="title">Технокряк</h2>
-            <p class="text">Веб-сайт</p>
+
+            <h2 class="card__name">Технокряк</h2>
+            <p class="card__branch">Веб-сайт</p>
           </li>
-          <li class="flex-element">
-            <div class="card-thumb">
+
+          <li class="card-set__item">
+            <div class="card">
               <img src="/images/img2.jpg" alt="" width="370" height="294" />
-              <div class="card-text">
+              <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -96,13 +107,13 @@
                 </p>
               </div>
             </div>
-            <h2 class="title">Постер New Orlean vs Golden Star</h2>
-            <p class="text">Дизайн</p>
+            <h2 class="card__name">Постер New Orlean vs Golden Star</h2>
+            <p class="card__branch">Дизайн</p>
           </li>
-          <li class="flex-element">
-            <div class="card-thumb">
+          <li class="card-set__item">
+            <div class="card">
               <img src="/images/img3.jpg" alt="" width="370" height="294" />
-              <div class="card-text">
+              <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -110,13 +121,13 @@
                 </p>
               </div>
             </div>
-            <h2 class="title">Ресторан Seafood</h2>
-            <p class="text">Приложение</p>
+            <h2 class="card__name">Ресторан Seafood</h2>
+            <p class="card__branch">Приложение</p>
           </li>
-          <li class="flex-element">
-            <div class="card-thumb">
+          <li class="card-set__item">
+            <div class="card">
               <img src="/images/img4.jpg" alt="" width="370" height="294" />
-              <div class="card-text">
+              <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -124,13 +135,13 @@
                 </p>
               </div>
             </div>
-            <h2 class="title">Проект Prime</h2>
-            <p class="text">Маркетинг</p>
+            <h2 class="card__name">Проект Prime</h2>
+            <p class="card__branch">Маркетинг</p>
           </li>
-          <li class="flex-element">
-            <div class="card-thumb">
+          <li class="card-set__item">
+            <div class="card">
               <img src="/images/img5.jpg" alt="" width="370" height="294" />
-              <div class="card-text">
+              <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -138,13 +149,13 @@
                 </p>
               </div>
             </div>
-            <h2 class="title">Проект Boxes</h2>
-            <p class="text">Приложение</p>
+            <h2 class="card__name">Проект Boxes</h2>
+            <p class="card__branch">Приложение</p>
           </li>
-          <li class="flex-element">
-            <div class="card-thumb">
+          <li class="card-set__item">
+            <div class="card">
               <img src="/images/img6.jpg" alt="" width="370" height="294" />
-              <div class="card-text">
+              <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -152,13 +163,13 @@
                 </p>
               </div>
             </div>
-            <h2 class="title">Inspiration has no Borders</h2>
-            <p class="text">Веб-сайт</p>
+            <h2 class="card__name">Inspiration has no Borders</h2>
+            <p class="card__branch">Веб-сайт</p>
           </li>
-          <li class="flex-element">
-            <div class="card-thumb">
+          <li class="card-set__item">
+            <div class="card">
               <img src="/images/img7.jpg" alt="" width="370" height="294" />
-              <div class="card-text">
+              <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -166,13 +177,13 @@
                 </p>
               </div>
             </div>
-            <h2 class="title">Издание Limited Edition</h2>
-            <p class="text">Дизайн</p>
+            <h2 class="card__name">Издание Limited Edition</h2>
+            <p class="card__branch">Дизайн</p>
           </li>
-          <li class="flex-element">
-            <div class="card-thumb">
+          <li class="card-set__item">
+            <div class="card">
               <img src="/images/img8.jpg" alt="" width="370" height="294" />
-              <div class="card-text">
+              <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -180,13 +191,13 @@
                 </p>
               </div>
             </div>
-            <h2 class="title">Проект LAB</h2>
-            <p class="text">Маркетинг</p>
+            <h2 class="card__name">Проект LAB</h2>
+            <p class="card__branch">Маркетинг</p>
           </li>
-          <li class="flex-element">
-            <div class="card-thumb">
+          <li class="card-set__item">
+            <div class="card">
               <img src="/images/img9.jpg" alt="" width="370" height="294" />
-              <div class="card-text">
+              <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -194,8 +205,8 @@
                 </p>
               </div>
             </div>
-            <h2 class="title">Growing Business</h2>
-            <p class="text">Приложение</p>
+            <h2 class="card__name">Growing Business</h2>
+            <p class="card__branch">Приложение</p>
           </li>
         </ul>
       </div>
@@ -203,20 +214,20 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer">
-        <div class="information">
-          <a href="/index.html" class="logo secondary"
-            ><span class="logo-accent">Web</span>Studio</a
+      <div class="footer__container container">
+        <div class="footer__information">
+          <a href="/index.html" class="logo-secondary"
+            ><span class="logo-secondary__accent">Web</span>Studio</a
           >
-          <p class="text">г. Киев, пр-т Леси Украинки, 26</p>
-          <ul class="footer-nav">
+          <p class="footer__text">г. Киев, пр-т Леси Украинки, 26</p>
+          <ul class="footer__nav">
             <li>
-              <a href="mailto:info@devstudio.com" class="link">
+              <a href="mailto:info@devstudio.com" class="footer__link">
                 info@devstudio.com
               </a>
             </li>
             <li>
-              <a href="tel:+38096 111 11 11" class="link">
+              <a href="tel:+38096 111 11 11" class="footer__link">
                 +38 096 111 11 11
               </a>
             </li>
@@ -224,32 +235,32 @@
         </div>
 
         <div class="networks">
-          <h2 class="footer-title">Присоединяйтесь</h2>
-          <ul class="networks-list">
-            <li class="networks-list-item">
-              <a href="" class="network footer">
-                <svg class="network-icon">
+          <h2 class="networks__title">Присоединяйтесь</h2>
+          <ul class="networks__list">
+            <li class="networks__item">
+              <a href="" class="networks__link">
+                <svg class="networks__icon">
                   <use href="./images/svg/sprite.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="networks-list-item">
-              <a href="" class="network footer">
-                <svg class="network-icon">
+            <li class="networks__item">
+              <a href="" class="networks__link">
+                <svg class="networks__icon">
                   <use href="./images/svg/sprite.svg#icon-twitter-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="networks-list-item">
-              <a href="" class="network footer">
-                <svg class="network-icon">
+            <li class="networks__item">
+              <a href="" class="networks__link">
+                <svg class="networks__icon">
                   <use href="./images/svg/sprite.svg#icon-facebook-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="networks-list-item">
-              <a href="" class="network footer">
-                <svg class="network-icon">
+            <li class="networks__item">
+              <a href="" class="networks__link">
+                <svg class="networks__icon">
                   <use href="./images/svg/sprite.svg#icon-linkedin-2"></use>
                 </svg>
               </a>
@@ -257,18 +268,21 @@
           </ul>
         </div>
 
+        <!-- footer-form -->
         <form>
           <div class="footer-form">
-            <h2 class="footer-title">Подпишитесь на рассылку</h2>
-            <label for="mail" class="footer-label"> </label>
+            <h2 class="footer-form__title">Подпишитесь на рассылку</h2>
+            <label class="footer-form__label" for="mail"> </label>
             <input
-              class="footer-input"
+              class="footer-form__input"
               type="email"
               name="mail"
               id="mail"
               placeholder="E-mail"
             />
-            <button type="button" class="button-footer">Подписаться</button>
+            <button class="footer-form__button" type="button">
+              Подписаться
+            </button>
           </div>
         </form>
       </div>
