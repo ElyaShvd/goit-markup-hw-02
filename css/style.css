@@ -42,7 +42,7 @@ ul {
 
 /* Logo */
 
-.logo-primary {
+.logo {
   color: var(--black-color);
 
   font-family: Raleway, "Times New Roman", Times, serif;
@@ -51,12 +51,11 @@ ul {
   line-height: 1.19;
 }
 
-.logo-primary__accent,
-.logo-secondary__accent {
+.logo__accent {
   color: var(--accent-color);
 }
 
-.logo-secondary {
+.footer__logo {
   color: var(--white-color);
 
   font-family: Raleway, "Times New Roman", Times, serif;
@@ -123,12 +122,12 @@ ul {
   color: var(--accent-color);
 }
 
-.site-nav__link.current {
+.site-nav__link--active {
   color: var(--accent-color);
   position: relative;
 }
 
-.site-nav__link.current::after {
+.site-nav__link--active::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -658,10 +657,6 @@ ul {
   height: 20px;
 }
 
-.networks .networks {
-  display: flex;
-}
-
 /* form */
 
 .footer-form__title {
@@ -820,6 +815,17 @@ ul {
   margin-bottom: 0;
 }
 
+.card-set__item:hover .card-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card {
+  position: relative;
+
+  overflow: hidden;
+}
+
 .card__name {
   color: var(--primary-text-color);
 
@@ -841,12 +847,6 @@ ul {
 
   margin-left: 24px;
   margin-right: 24px;
-}
-
-.card {
-  position: relative;
-
-  overflow: hidden;
 }
 
 .card-description {
@@ -874,11 +874,6 @@ ul {
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   transform: translateY(102%);
-}
-
-.card-set__item:hover .card-description {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* MODAL + BACKDROP  */
