@@ -1,0 +1,21 @@
+.portfolio-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.portfolio-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.portfolio-nav__item {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
