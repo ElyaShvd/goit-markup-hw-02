@@ -1,4 +1,13 @@
+.work.section {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .work-list {
+  display: none;
   display: flex;
   flex-wrap: wrap;
 
@@ -6,6 +15,15 @@
   padding-left: 0;
   justify-content: space-between;
   /* outline: solid 2px red; */
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-left: 0;
+    justify-content: space-between;
+  }
 }
 
 .work-list__thumb {
@@ -16,7 +34,7 @@
 .work-list__description {
   position: absolute;
 
-  width: 100%;
+  width: 370px;
   height: 70px;
   left: 0;
   bottom: 0;

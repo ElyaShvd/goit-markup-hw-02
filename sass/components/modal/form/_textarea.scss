@@ -1,6 +1,6 @@
 textarea {
   resize: none;
-  width: 448px;
+  width: 370px;
   height: 120px;
   padding: 12px 16px;
 
@@ -19,5 +19,11 @@ textarea {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  textarea {
+    width: 448px;
   }
 }

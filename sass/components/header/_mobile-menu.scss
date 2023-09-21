@@ -1,0 +1,83 @@
+.menu-toggle {
+  display: inline-flex;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &.is-open .icon-close {
+    display: none;
+  }
+
+  &.is-open .icon-menu {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+// добавить из-опен на лого
+
+// .is-open.logo {
+//   display: none;
+// }
+
+.icon-menu {
+  display: none;
+}
+
+.icon-close {
+  display: block;
+}
+
+.mobile-menu {
+  //   display: none;
+
+  //
+  //   padding: 20px;
+  //   text-align: center;
+  // background-color: #f1e9e9;
+
+  &.is-open {
+    display: block;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-height: 796px;
+
+    background-color: #fff;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.menu-container {
+  overflow-y: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}

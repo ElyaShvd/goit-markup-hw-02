@@ -1,5 +1,15 @@
 .networks {
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // margin-right: 70px;
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
 }
 
 .networks__link {

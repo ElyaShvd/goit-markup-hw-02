@@ -9,10 +9,14 @@
   color: $white-color;
 
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.3;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }
 
 .hero__overlay {
@@ -21,17 +25,99 @@
   flex-direction: column;
   justify-content: center;
 
-  max-width: 1600px;
-  height: 600px;
+  max-width: 100%;
+  height: 400px;
   margin: 0 auto;
   background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
-    url(../images/header.jpg);
+    url(../images/bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #c4c4c4;
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
+}
+
+.hero__overlay {
+  background-color: var(--dark-bgc);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg-mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg-tab@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__overlay {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg-desktop.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg-desktop@2x.jpg);
+  }
+}
+
+.hero .container {
+  padding: 118px 10px;
+  width: 100%;
+  margin: auto;
+}
+@media screen and (min-width: 480px) {
+  .hero .container {
+    padding: 118px 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero .container {
+    padding: 200px 60px;
+  }
 }

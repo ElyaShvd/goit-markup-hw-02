@@ -1,18 +1,22 @@
 .site-nav {
-  display: flex;
-  margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+  }
 }
 
 .site-nav__item {
-  margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
 
-  &:last-child {
-    margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .site-nav__link {
-  display: block;
+  display: relative;
   margin-top: 32px;
   margin-bottom: 32px;
 
@@ -46,5 +50,15 @@
     margin-top: 28px;
     background-color: $accent-color;
     border-radius: 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-nav__link {
+    font-size: 40px;
+
+    &--active::after {
+      width: 0;
+    }
   }
 }

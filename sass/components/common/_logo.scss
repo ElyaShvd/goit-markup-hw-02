@@ -3,8 +3,12 @@
 
   font-family: Raleway, "Times New Roman", Times, serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
+
+  @media screen and (min-width: 768px) {
+    // margin-right: 88px;
+  }
 }
 
 .logo__accent {
@@ -16,6 +20,8 @@
 
   font-family: Raleway, "Times New Roman", Times, serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
+
+  margin-bottom: 20px;
 }

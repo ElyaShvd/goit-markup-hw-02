@@ -34,13 +34,13 @@
 
 .form-field__input-icon.checkbox__icon {
   position: absolute;
-  left: 3px;
+  left: 0;
   width: 16px;
   height: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 11px;
+  margin-left: 0;
 
   top: 50%;
   transform: translateY(-50%);
@@ -76,8 +76,15 @@
 }
 
 .input-checkbox__label.checkbox {
-  margin-left: 35px;
-  font-size: 14px;
+  margin-left: 19px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .input-checkbox__label.checkbox {
+    margin-left: 19px;
+    font-size: 14px;
+  }
 }
 
 .input-checkbox__icon {
