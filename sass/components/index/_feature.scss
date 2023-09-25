@@ -1,6 +1,4 @@
 .feature-list {
-  // display: flex;
-  // flex-wrap: nowrap;
   margin-bottom: 0;
   padding-left: 0;
 }
@@ -30,8 +28,6 @@
   }
 }
 .feature-list__item {
-  // margin-right: 30px;
-
   &:last-child {
     margin-right: 0px;
   }
@@ -98,9 +94,6 @@
 }
 
 .feature-list__text {
-  // margin-top: 0;
-  // margin-bottom: 30px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;

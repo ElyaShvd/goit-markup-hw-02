@@ -105,7 +105,7 @@
           <nav class="mobi__nav">
             <ul class="mobi__nav-list list">
               <li class="mobi__nav-item">
-                <a href="" class="mobi__nav-link">Студия</a>
+                <a href="./index.html" class="mobi__nav-link">Студия</a>
               </li>
               <li class="mobi__nav-item">
                 <a href="./portfolio.html" class="mobi__nav-link current"
@@ -160,7 +160,7 @@
     </header>
 
     <section class="portfolio section">
-      <div class="portfolio-container">
+      <div class="container">
         <!-- <h1 class="section-title">Portfolio</h1> -->
 
         <ul class="portfolio-nav">
@@ -184,7 +184,34 @@
         <ul class="card-set">
           <li class="card-set__item">
             <div class="card">
-              <img src="/images/img1.jpg" alt="" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portf-mob1.jpg    1x,
+                    ./images/portf-mob1@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-tab1.jpg    1x,
+                    ./images/portf-tab1@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-desk1.jpg   1x,
+                    ./imagesportf-desk1@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="portfolio-image"
+                  src="./images/portf-mob1.jpg"
+                  alt="Веб-сайт"
+                />
+              </picture>
               <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -200,7 +227,35 @@
 
           <li class="card-set__item">
             <div class="card">
-              <img src="/images/img2.jpg" alt="" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portf-mob2.jpg    1x,
+                    ./images/portf-mob2@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-tab2.jpg    1x,
+                    ./images/portf-tab2@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-desk2.jpg   1x,
+                    ./imagesportf-desk2@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="portfolio-image"
+                  src="./images/portf-mob2.jpg"
+                  alt="Веб-сайт"
+                />
+              </picture>
+
               <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -212,9 +267,37 @@
             <h2 class="card__name">Постер New Orlean vs Golden Star</h2>
             <p class="card__branch">Дизайн</p>
           </li>
+
           <li class="card-set__item">
             <div class="card">
-              <img src="/images/img3.jpg" alt="" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portf-mob3.jpg    1x,
+                    ./images/portf-mob3@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-tab3.jpg    1x,
+                    ./images/portf-tab3@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-desk3.jpg   1x,
+                    ./imagesportf-desk3@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="portfolio-image"
+                  src="./images/portf-mob3.jpg"
+                  alt="Веб-сайт"
+                />
+              </picture>
               <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -226,9 +309,37 @@
             <h2 class="card__name">Ресторан Seafood</h2>
             <p class="card__branch">Приложение</p>
           </li>
+
           <li class="card-set__item">
             <div class="card">
-              <img src="/images/img4.jpg" alt="" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portf-mob4.jpg    1x,
+                    ./images/portf-mob4@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-tab4.jpg    1x,
+                    ./images/portf-tab4@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-desk4.jpg   1x,
+                    ./imagesportf-desk4@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="portfolio-image"
+                  src="./images/portf-mob4.jpg"
+                  alt="Веб-сайт"
+                />
+              </picture>
               <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -240,9 +351,37 @@
             <h2 class="card__name">Проект Prime</h2>
             <p class="card__branch">Маркетинг</p>
           </li>
+
           <li class="card-set__item">
             <div class="card">
-              <img src="/images/img5.jpg" alt="" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portf-mob5.jpg    1x,
+                    ./images/portf-mob5@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-tab5.jpg    1x,
+                    ./images/portf-tab5@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-desk5.jpg   1x,
+                    ./imagesportf-desk5@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="portfolio-image"
+                  src="./images/portf-mob5.jpg"
+                  alt="Веб-сайт"
+                />
+              </picture>
               <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -254,9 +393,37 @@
             <h2 class="card__name">Проект Boxes</h2>
             <p class="card__branch">Приложение</p>
           </li>
+
           <li class="card-set__item">
             <div class="card">
-              <img src="/images/img6.jpg" alt="" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portf-mob6.jpg    1x,
+                    ./images/portf-mob6@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-tab6.jpg    1x,
+                    ./images/portf-tab6@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-desk6.jpg   1x,
+                    ./imagesportf-desk6@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="portfolio-image"
+                  src="./images/portf-mob6.jpg"
+                  alt="Веб-сайт"
+                />
+              </picture>
               <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -268,9 +435,37 @@
             <h2 class="card__name">Inspiration has no Borders</h2>
             <p class="card__branch">Веб-сайт</p>
           </li>
+
           <li class="card-set__item">
             <div class="card">
-              <img src="/images/img7.jpg" alt="" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portf-mob7.jpg    1x,
+                    ./images/portf-mob7@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-tab7.jpg    1x,
+                    ./images/portf-tab7@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-desk7.jpg   1x,
+                    ./imagesportf-desk7@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="portfolio-image"
+                  src="./images/portf-mob7.jpg"
+                  alt="Веб-сайт"
+                />
+              </picture>
               <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -282,9 +477,37 @@
             <h2 class="card__name">Издание Limited Edition</h2>
             <p class="card__branch">Дизайн</p>
           </li>
+
           <li class="card-set__item">
             <div class="card">
-              <img src="/images/img8.jpg" alt="" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portf-mob8.jpg    1x,
+                    ./images/portf-mob8@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-tab8.jpg    1x,
+                    ./images/portf-tab8@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-desk8.jpg   1x,
+                    ./imagesportf-desk8@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="portfolio-image"
+                  src="./images/portf-mob8.jpg"
+                  alt="Веб-сайт"
+                />
+              </picture>
               <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -296,9 +519,37 @@
             <h2 class="card__name">Проект LAB</h2>
             <p class="card__branch">Маркетинг</p>
           </li>
+
           <li class="card-set__item">
             <div class="card">
-              <img src="/images/img9.jpg" alt="" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portf-mob9.jpg    1x,
+                    ./images/portf-mob9@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-tab9.jpg    1x,
+                    ./images/portf-tab9@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portf-desk9.jpg   1x,
+                    ./imagesportf-desk9@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="portfolio-image"
+                  src="./images/portf-mob9.jpg"
+                  alt="Веб-сайт"
+                />
+              </picture>
               <div class="card-description">
                 <p>
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -389,5 +640,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
